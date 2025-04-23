@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def create_tables(mysql):
     cursor = mysql.connection.cursor()
 
@@ -31,3 +32,24 @@ def create_tables(mysql):
 
     mysql.connection.commit()
     cursor.close()
+=======
+# routes/users.py
+
+from flask import Blueprint, jsonify
+from db import mysql
+
+bp = Blueprint('users', __name__, url_prefix='/api')
+
+@bp.route('/users')
+def get_users():
+    cursor = mysql.connection.cursor()
+    cursor.execute("""
+        SELECT id, 
+               CONCAT(nombre, ' ', apellido_paterno, ' ', apellido_materno) AS nombre_completo, 
+               curp, rfc 
+        FROM usuarios
+    """)
+    users = cursor.fetchall()
+    cursor.close()
+    return jsonify(users)
+>>>>>>> eb11466 (Se cambio la isntancia y se esta modificando el login así como la interfaz donde se ve la información)

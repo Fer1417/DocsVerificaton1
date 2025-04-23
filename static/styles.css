@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8ef;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2, h3 {
+    color: #5e239d;
+  }
+  
+  button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #e38800;
+  }
+  
+  input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .login-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(92, 62, 130, 0.2);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .dashboard, #userDetails {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #loginError {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
