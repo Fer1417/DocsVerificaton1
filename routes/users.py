@@ -1,3 +1,4 @@
+
 from flask import Blueprint, jsonify
 from db import mysql
 

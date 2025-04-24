@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel</title>
+  <link rel="stylesheet" href="/static/styles_table.css">
+  <script src="https://kit.fontawesome.com/4868e06636.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="header">
+    <img src="/static/logo_white.png" alt="Logo">
+    <h2>Usuarios</h2>
+    <a class="logout" href="/logout">Salir</a>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Buscar por ID o nombre...">
+    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+
+  <table id="usersTable" class="dashboard-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>CURP</th>
+        <th>RFC</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

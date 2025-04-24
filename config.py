@@ -1,8 +1,8 @@
-
 class Config:
-    SECRET_KEY = 'clave_super_secreta'
-    MYSQL_HOST = 'localhost'
-    MYSQL_USER = 'root'
-    MYSQL_PASSWORD = ''
+    SECRET_KEY = 'lagata'
+    MYSQL_HOST = '35.193.100.4'
+    MYSQL_USER = 'user'
+    MYSQL_PASSWORD = 'lagata'
     MYSQL_DB = 'gestion_documentos'
     MYSQL_CURSORCLASS = 'DictCursor'
+
