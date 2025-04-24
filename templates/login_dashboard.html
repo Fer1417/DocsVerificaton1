@@ -2,53 +2,22 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestión de Documentos - Login</title>
+  <title>Panel</title>
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-  {% with messages = get_flashed_messages() %}
-    {% if messages %}
-      <div class="flash">{{ messages[0] }}</div>
-    {% endif %}
-  {% endwith %}
-
-  <div class="login-container">
-    <h2>Iniciar Sesión</h2>
-    <form id="loginForm" method="POST">
-      <input type="email" name="email" placeholder="Correo" required>
-      <input type="password" name="password" placeholder="Contraseña" required>
-      <button type="submit">Entrar</button>
-    </form>
-    <div id="loginError"></div>
-  </div>
-
-  {% if users %}
   <div class="dashboard">
     <h2>Usuarios</h2>
     <input type="text" id="searchInput" placeholder="Buscar por ID o nombre...">
     <table id="usersTable">
       <thead>
         <tr>
-          <th>ID</th><th>Nombre</th><th>CURP</th><th>RFC</th><th>Acción</th>
+          <th>ID</th><th>Nombre</th><th>CURP</th><th>RFC</th>
         </tr>
       </thead>
       <tbody></tbody>
     </table>
   </div>
-
-  <div id="userDetails" class="hidden">
-    <h3>Detalles del Usuario</h3>
-    <p id="infoNombre"></p>
-    <form id="uploadDocForm">
-      <label for="file">Subir Documento:</label>
-      <input type="file" id="file" name="file" required>
-      <button type="submit">Subir y Verificar</button>
-    </form>
-    <pre id="docResultado"></pre>
-  </div>
-  {% endif %}
-
   <script src="/static/app.js"></script>
 </body>
 </html>
